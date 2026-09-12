@@ -33,3 +33,6 @@ jobs:
 
     - name: Test
       run: dotnet test --no-build --configuration Release --verbosity normal
+
+    - name: Show masked secret
+      run: echo "Secret is ${{ secrets.TEST_SECRET }}"
